@@ -42,11 +42,27 @@ productRouter.get('/:id', async (req, res, next) => {
     next(createError(404, error.message))
   }
 
-
 })
 
 
 // update specific product
+
+productRouter.put('/:id', async (req, res, next) => {
+
+  try {
+    const id = req.params.id
+
+    const findProductAndUpdate = await ProductModel.findByIdAndUpdate({
+      _id: id
+    }, req.body, {
+      new: true
+    })
+    res.send(findProductAndUpdate)
+  } catch (error) {
+    next(createError(404, error.message))
+  }
+
+})
 
 
 

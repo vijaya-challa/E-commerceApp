@@ -19,3 +19,17 @@ Content-Type: application/json
 ###
 
 GET http://localhost:5000/products/641993bd1b5edd6a0fcaea0f
+
+
+###
+
+PUT http://localhost:5000/products/641993bd1b5edd6a0fcaea0f
+Content-Type: application/json
+
+
+{
+"name": "Pen",
+"description":"Black",
+"price":10,
+"quantity":10
+}
