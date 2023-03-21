@@ -9,8 +9,13 @@ Content-Type: application/json
 
 {
 
-  "name":"Hand Bag",
-  "description":"red color",
-  "price":120,
+  "name":"Bag",
+  "description":"green color",
+  "price":150,
   "quantity":1
 }
+
+
+###
+
+GET http://localhost:5000/products/641993bd1b5edd6a0fcaea0f
