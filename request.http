@@ -9,27 +9,36 @@ Content-Type: application/json
 
 {
 
-  "name":"Bag",
-  "description":"green color",
-  "price":150,
+  "name":"shoe",
+  "description":"white color",
+  "price":100,
   "quantity":1
 }
 
 
 ###
 
-GET http://localhost:5000/products/641993bd1b5edd6a0fcaea0f
+GET http://localhost:5000/products/6419b04d7ea2f3d0644d8b3d
 
 
 ###
 
-PUT http://localhost:5000/products/641993bd1b5edd6a0fcaea0f
+PUT http://localhost:5000/products/6419b04d7ea2f3d0644d8b3d
 Content-Type: application/json
 
 
 {
-"name": "Pen",
-"description":"Black",
-"price":10,
-"quantity":10
+"name": "Bag",
+"description":"yellow",
+"price":100,
+"quantity":2
 }
+
+###
+
+Delete http://localhost:5000/products/6419b1f6529579237727f2be
+
+
+######################################## user
+
+

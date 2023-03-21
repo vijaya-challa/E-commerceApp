@@ -3,20 +3,21 @@ import dotenv from 'dotenv'
 import connect from './lib/db.js'
 import productRouter from './routes/productRouter.js'
 import createError from 'http-errors'
+import userRouter from './routes/userRouter.js'
 
 
 
 
 dotenv.config()
 const server = express()
-
+connect()
 const port = process.env.PORT || 3000
 
 server.use(express.json())
 
 server.use('/products', productRouter)
+server.use('/users', userRouter)
 
-connect()
 
 server.use('*', (req, res, next) => {
   next({
