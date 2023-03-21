@@ -1,0 +1,16 @@
+GET http://localhost:5000/products
+
+
+###
+
+POST http://localhost:5000/products
+Content-Type: application/json
+
+
+{
+
+  "name":"Hand Bag",
+  "description":"red color",
+  "price":120,
+  "quantity":1
+}
