@@ -14,8 +14,8 @@ POST http://localhost:5000/users
 Content-Type: application/json
 
 {
-"email":"bob@abc.com",
-"username":"Bob",
+"email":"Anna@abc.com",
+"username":"Anna",
 "password":"123456789"
 }
 
@@ -26,7 +26,7 @@ Content-Type: application/json
 
 
 {
-"email":"abcdef@abc.com",
+"email":"Anna@abc.com",
 "username":"Anna",
 "password":"123456789"
 }
@@ -44,7 +44,7 @@ Content-Type: application/json
 
 {
 
-  "name":"Louis Vuitton Bag",
+  "name":"some Bag",
   "description":"Brown color",
   "price":60,
   "quantity":1
@@ -53,24 +53,23 @@ Content-Type: application/json
 
 ###
 # get product by id
-GET http://localhost:5000/products/641af2d6a5d141ff1b7c8ec7
+GET http://localhost:5000/products/641af9bbf537cf87dc42e3f1
 
 
 ###
 # update product by id
-PUT http://localhost:5000/products/641af2d6a5d141ff1b7c8ec7
+PUT http://localhost:5000/products/641af9bbf537cf87dc42e3f1
 Content-Type: application/json
 
 
 {
 
-
-"quantity":3
+"description":"White Bag"
 }
 
 ###
 # delete product by id
-Delete http://localhost:5000/products/641af2d6a5d141ff1b7c8ec7
+Delete http://localhost:5000/products/641af9bbf537cf87dc42e3f1
 
 
 ###cart
@@ -98,9 +97,27 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MTljMjRmM
 
 ##remove product from cart
 
-DELETE  http://localhost:5000/cart/641af2c7a5d141ff1b7c8ec5
+DELETE  http://localhost:5000/cart/641af8c47e50a0a2107cb815
 Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MTljMjRmMWYxMTMzNjQwM2Q2YmFmYiIsImlhdCI6MTY3OTQ4NjczNywiZXhwIjoxNjc5NDkyNzM3fQ.MM0sTabIs89-m7bE28HfpVH1nNB1UnWc9s6dgsZotCQ
+
+
+###
+
+
+###checkout
+POST http://localhost:5000/checkout
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MTljMjRmMWYxMTMzNjQwM2Q2YmFmYiIsImlhdCI6MTY3OTQ4NjczNywiZXhwIjoxNjc5NDkyNzM3fQ.MM0sTabIs89-m7bE28HfpVH1nNB1UnWc9s6dgsZotCQ
+
+
+{
+
+
+
+
+}
+
 
 
 

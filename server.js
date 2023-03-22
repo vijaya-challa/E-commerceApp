@@ -7,6 +7,7 @@ import userRouter from './routes/userRouter.js'
 import cartRouter from './routes/cartRouter.js'
 import checkAuth from './middleware/checkAuth.js'
 import logger from 'morgan'
+import checkoutRouter from './routes/checkoutRouter.js'
 
 
 
@@ -22,6 +23,7 @@ server.use(logger('dev'))
 server.use('/products', productRouter)
 server.use('/users', userRouter)
 server.use('/cart', checkAuth,cartRouter)
+server.use('/checkout', checkAuth, checkoutRouter)
 
 
 server.use('*', (req, res, next) => {
