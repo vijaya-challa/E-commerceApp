@@ -4,6 +4,9 @@ import connect from './lib/db.js'
 import productRouter from './routes/productRouter.js'
 import createError from 'http-errors'
 import userRouter from './routes/userRouter.js'
+import cartRouter from './routes/cartRouter.js'
+import checkAuth from './middleware/checkAuth.js'
+import logger from 'morgan'
 
 
 
@@ -14,9 +17,11 @@ connect()
 const port = process.env.PORT || 3000
 
 server.use(express.json())
+server.use(logger('dev'))
 
 server.use('/products', productRouter)
 server.use('/users', userRouter)
+server.use('/cart', checkAuth,cartRouter)
 
 
 server.use('*', (req, res, next) => {

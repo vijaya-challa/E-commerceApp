@@ -9,21 +9,21 @@ Content-Type: application/json
 
 {
 
-  "name":"shoe",
-  "description":"white color",
-  "price":100,
+  "name":"bag",
+  "description":"red color",
+  "price":150,
   "quantity":1
 }
 
 
 ###
 
-GET http://localhost:5000/products/6419b90acb41c6ae204fbfab
+GET http://localhost:5000/products/641abed5334dbbc3557ca027
 
 
 ###
 
-PUT http://localhost:5000/products/6419b90acb41c6ae204fbfab
+PUT http://localhost:5000/products/641abed5334dbbc3557ca027
 Content-Type: application/json
 
 
@@ -36,9 +36,11 @@ Content-Type: application/json
 
 ###
 
-Delete http://localhost:5000/products/6419b90acb41c6ae204fbfab
+Delete http://localhost:5000/products/641abed5334dbbc3557ca027
 
 ###user
+
+GET http://localhost:5000/users
 
 
 ###
@@ -47,9 +49,46 @@ POST http://localhost:5000/users
 Content-Type: application/json
 
 {
+"email":"abcde@abc.com",
+"username":"Anna",
+"password":"123456789"
+}
+
+###
+POST http://localhost:5000/users/login
+Content-Type: application/json
+
+
+{
 "email":"abc@abc.com",
 "username":"Anna",
 "password":"123456789"
+}
+
+###
+
+###cart
+
+# get users cart
+
+GET http://localhost:5000/cart
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MTljMjRmMWYxMTMzNjQwM2Q2YmFmYiIsImlhdCI6MTY3OTQ4MDYzMCwiZXhwIjoxNjc5NDg2NjMwfQ.-IXyABDRxMh7QUFDFpJzG3Pr7gXUqEIpUVId5Xq-hPQ
+
+
+
+
+
+###
+# add cart
+POST http://localhost:5000/cart
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MTljMjRmMWYxMTMzNjQwM2Q2YmFmYiIsImlhdCI6MTY3OTQ4MDYzMCwiZXhwIjoxNjc5NDg2NjMwfQ.-IXyABDRxMh7QUFDFpJzG3Pr7gXUqEIpUVId5Xq-hPQ
+
+
+
+{
+"product":"641acec8892ba7d81097e1d5"
 }
 
 
