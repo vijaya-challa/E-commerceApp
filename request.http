@@ -78,19 +78,19 @@ Delete http://localhost:5000/products/641af9bbf537cf87dc42e3f1
 
 GET http://localhost:5000/cart
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MTljMjRmMWYxMTMzNjQwM2Q2YmFmYiIsImlhdCI6MTY3OTQ4NjczNywiZXhwIjoxNjc5NDkyNzM3fQ.MM0sTabIs89-m7bE28HfpVH1nNB1UnWc9s6dgsZotCQ
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MWFmYTQyZjUzN2NmODdkYzQyZTNmNCIsImlhdCI6MTY3OTUwMTUzMSwiZXhwIjoxNjc5NTg3OTMxfQ.ZcXg-WiGrpiZQchkDCykji3gwCCqSpHCvwEwNApe3cw
 
 
 ###
 # add cart
 POST http://localhost:5000/cart
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MTljMjRmMWYxMTMzNjQwM2Q2YmFmYiIsImlhdCI6MTY3OTQ4NjczNywiZXhwIjoxNjc5NDkyNzM3fQ.MM0sTabIs89-m7bE28HfpVH1nNB1UnWc9s6dgsZotCQ
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MWFmYTQyZjUzN2NmODdkYzQyZTNmNCIsImlhdCI6MTY3OTUwMTUzMSwiZXhwIjoxNjc5NTg3OTMxfQ.ZcXg-WiGrpiZQchkDCykji3gwCCqSpHCvwEwNApe3cw
 
 
 
 {
-"product":"641af975f537cf87dc42e3ec"
+"product":"641af2b0a5d141ff1b7c8ec2"
 }
 
 ###
@@ -99,7 +99,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MTljMjRmM
 
 DELETE  http://localhost:5000/cart/641af8c47e50a0a2107cb815
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MTljMjRmMWYxMTMzNjQwM2Q2YmFmYiIsImlhdCI6MTY3OTQ4NjczNywiZXhwIjoxNjc5NDkyNzM3fQ.MM0sTabIs89-m7bE28HfpVH1nNB1UnWc9s6dgsZotCQ
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MWFmYTQyZjUzN2NmODdkYzQyZTNmNCIsImlhdCI6MTY3OTUwMTUzMSwiZXhwIjoxNjc5NTg3OTMxfQ.ZcXg-WiGrpiZQchkDCykji3gwCCqSpHCvwEwNApe3cw
 
 
 ###
@@ -108,15 +108,8 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MTljMjRmM
 ###checkout
 POST http://localhost:5000/checkout
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MTljMjRmMWYxMTMzNjQwM2Q2YmFmYiIsImlhdCI6MTY3OTQ4NjczNywiZXhwIjoxNjc5NDkyNzM3fQ.MM0sTabIs89-m7bE28HfpVH1nNB1UnWc9s6dgsZotCQ
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MWFmYTQyZjUzN2NmODdkYzQyZTNmNCIsImlhdCI6MTY3OTUwMTUzMSwiZXhwIjoxNjc5NTg3OTMxfQ.ZcXg-WiGrpiZQchkDCykji3gwCCqSpHCvwEwNApe3cw
 
-
-{
-
-
-
-
-}
 
 
 

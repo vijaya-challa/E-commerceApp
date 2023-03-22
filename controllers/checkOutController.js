@@ -24,8 +24,19 @@ export const checkOut = async (req, res, next) => {
     const totalPrice = prices.reduce((price, sum) => {
       return sum + price
     })
+    const order = await OrderModel.create({
+      userId: userId,
+      products: cart.products,
+      totalPrice: totalPrice,
+      date: Date.now()
+    })
+    if (!order) {
+      next(createError(404, "order failed"))
+      return
+    }
+const deleteCart = await CartModel.findByIdAndRemove({_id:cart._id})
 
-    res.send({total:totalPrice})
+    res.send(order)
   } catch (error) {
     next(createError(404, error.message))
   }

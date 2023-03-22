@@ -40,7 +40,7 @@ export const logInToPlatform = async (req, res, next) => {
     }
 
     const option = {
-      expiresIn: "100m"
+      expiresIn: "1d"
     }
 
     const token = jwt.sign({
