@@ -34,7 +34,9 @@ export const checkOut = async (req, res, next) => {
       next(createError(404, "order failed"))
       return
     }
-const deleteCart = await CartModel.findByIdAndRemove({_id:cart._id})
+    const deleteCart = await CartModel.findByIdAndRemove({
+      _id: cart._id
+    })
 
     res.send(order)
   } catch (error) {

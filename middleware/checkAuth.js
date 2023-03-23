@@ -4,9 +4,9 @@ import jwt from 'jsonwebtoken'
 const checkAuth = (req, res, next) => {
   try {
     const accessToken = req.headers.authorization
-    if(!accessToken){
+    if (!accessToken) {
       next(createError(401, "Access Denied!"))
-      return 
+      return
     }
     const token = accessToken.split(' ')[1]
     if (!token) {

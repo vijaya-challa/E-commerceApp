@@ -1,15 +1,23 @@
 import express from 'express'
-import { getAllProducts, createNewProduct, getAllProductById, updateById, deleteById } from '../controllers/productController.js'
-import { productValidation } from '../middleware/productValidator.js'
+import {
+  getAllProducts,
+  createNewProduct,
+  getAllProductById,
+  updateById,
+  deleteById
+} from '../controllers/productController.js'
+import {
+  productValidation
+} from '../middleware/productValidator.js'
 
 
 const productRouter = express.Router()
 
 // get all Products
-productRouter.get('/',getAllProducts )
+productRouter.get('/', getAllProducts)
 
 // create new Product
-productRouter.post('/',productValidation ,createNewProduct)
+productRouter.post('/', productValidation, createNewProduct)
 
 // get product by id
 productRouter.get('/:id', getAllProductById)

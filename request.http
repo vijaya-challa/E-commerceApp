@@ -14,9 +14,9 @@ POST http://localhost:5000/users
 Content-Type: application/json
 
 {
-"email":"Annaabc.com",
+"email":"Annabe@cabc.com",
 "username":"Anna",
-"password":"123456789"
+"password":"nBj4o54689"
 }
 
 # login
@@ -26,7 +26,7 @@ Content-Type: application/json
 
 
 {
-"email":"Anna@abc.com",
+"email":"Annaabc.com",
 "username":"Anna",
 "password":"123456789"
 }
@@ -43,10 +43,9 @@ Content-Type: application/json
 
 
 {
-
-  "name":"d Bag",
+"name":"k",
   "description":"Brown color",
-  "price":"-60",
+  "price":0,
   "quantity":1
 }
 
