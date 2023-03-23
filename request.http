@@ -1,20 +1,15 @@
 
 ###user
-
-
 # get all users
 GET http://localhost:5000/users
 
-
-
 # add user
 ###
-
 POST http://localhost:5000/users
 Content-Type: application/json
 
 {
-"email":"Annabe@cabc.com",
+"email":"Annabelle@cabc.com",
 "username":"Anna",
 "password":"nBj4o54689"
 }
@@ -43,9 +38,9 @@ Content-Type: application/json
 
 
 {
-"name":"k",
-  "description":"Brown color",
-  "price":0,
+"name":"Prada Bag",
+  "description":"Glod color",
+  "price":1020,
   "quantity":1
 }
 
@@ -68,46 +63,43 @@ Content-Type: application/json
 
 ###
 # delete product by id
-Delete http://localhost:5000/products/641af9bbf537cf87dc42e3f1
+Delete http://localhost:5000/products/641afa7df537cf87dc42e3fa
 
 
 ###cart
-
 # get users cart
 
 GET http://localhost:5000/cart
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MWFmYTQyZjUzN2NmODdkYzQyZTNmNCIsImlhdCI6MTY3OTUwMTUzMSwiZXhwIjoxNjc5NTg3OTMxfQ.ZcXg-WiGrpiZQchkDCykji3gwCCqSpHCvwEwNApe3cw
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MWI4YWRmMDNkNGY0MWY3MDllNmUzMSIsImlhdCI6MTY3OTU3NzY2OSwiZXhwIjoxNjc5NjY0MDY5fQ.5bz9ToOLdvHAarjpN85jk41KiTfwEKCWEg8wUCyVHYg
 
 
 ###
 # add cart
 POST http://localhost:5000/cart
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MWFmYTQyZjUzN2NmODdkYzQyZTNmNCIsImlhdCI6MTY3OTUwMTUzMSwiZXhwIjoxNjc5NTg3OTMxfQ.ZcXg-WiGrpiZQchkDCykji3gwCCqSpHCvwEwNApe3cw
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MWI4YWRmMDNkNGY0MWY3MDllNmUzMSIsImlhdCI6MTY3OTU3NzY2OSwiZXhwIjoxNjc5NjY0MDY5fQ.5bz9ToOLdvHAarjpN85jk41KiTfwEKCWEg8wUCyVHYg
 
 
 
 {
-"product":"641af2c7a5d141ff1b7c8ec5"
+"product":"641af8c47e50a0a2107cb815"
 }
 
-###
 
+###
 ##remove product from cart
 
 DELETE  http://localhost:5000/cart/641af8c47e50a0a2107cb815
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MWFmYTQyZjUzN2NmODdkYzQyZTNmNCIsImlhdCI6MTY3OTUwMTUzMSwiZXhwIjoxNjc5NTg3OTMxfQ.ZcXg-WiGrpiZQchkDCykji3gwCCqSpHCvwEwNApe3cw
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MWI4YWRmMDNkNGY0MWY3MDllNmUzMSIsImlhdCI6MTY3OTU3NzY2OSwiZXhwIjoxNjc5NjY0MDY5fQ.5bz9ToOLdvHAarjpN85jk41KiTfwEKCWEg8wUCyVHYg
 
 
 ###
-
-
 ###checkout
 POST http://localhost:5000/checkout
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MWFmYTQyZjUzN2NmODdkYzQyZTNmNCIsImlhdCI6MTY3OTUwMTUzMSwiZXhwIjoxNjc5NTg3OTMxfQ.ZcXg-WiGrpiZQchkDCykji3gwCCqSpHCvwEwNApe3cw
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MWI4YWRmMDNkNGY0MWY3MDllNmUzMSIsImlhdCI6MTY3OTU3NzY2OSwiZXhwIjoxNjc5NjY0MDY5fQ.5bz9ToOLdvHAarjpN85jk41KiTfwEKCWEg8wUCyVHYg
 
 
 

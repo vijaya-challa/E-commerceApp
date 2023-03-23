@@ -48,7 +48,6 @@ export const productToCart = async (req, res, next) => {
     })
     const productId = req.body.product
     if (userCart) {
-      console.log('if case')
       const cart = await CartModel.findOne({
         userId
       })
@@ -80,7 +79,9 @@ export const deleteProduct = async (req, res, next) => {
     }
     cart.products.pull(productsId)
     const message = await cart.save()
-    res.send({message: "Product removed from cart"})
+    res.send({
+      message: "Product removed from cart"
+    })
   } catch (error) {
     next(createError(404, error.message))
   }
