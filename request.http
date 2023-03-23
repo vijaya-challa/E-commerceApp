@@ -14,7 +14,7 @@ POST http://localhost:5000/users
 Content-Type: application/json
 
 {
-"email":"Anna@abc.com",
+"email":"Annaabc.com",
 "username":"Anna",
 "password":"123456789"
 }
@@ -44,9 +44,9 @@ Content-Type: application/json
 
 {
 
-  "name":"some Bag",
+  "name":"d Bag",
   "description":"Brown color",
-  "price":60,
+  "price":"-60",
   "quantity":1
 }
 
@@ -90,7 +90,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MWFmYTQyZ
 
 
 {
-"product":"641af2b0a5d141ff1b7c8ec2"
+"product":"641af2c7a5d141ff1b7c8ec5"
 }
 
 ###

@@ -12,10 +12,9 @@ export const getAllProducts = async (req, res, next) => {
   }
 }
 
-export const createNewUser = async (req, res, next) => {
+export const createNewProduct = async (req, res, next) => {
   try {
     const newUser = await ProductModel.create(req.body)
-    // console.log(newUser)
     res.send(newUser)
   } catch (error) {
     next(createError(404, error.message))

@@ -1,4 +1,5 @@
 import express from 'express'
+import { validateUser } from '../middleware/userValidator.js'
 import { createNewUser, getAllUsers, logInToPlatform, logOutFromPlatform } from '../controllers/userController.js'
 
 const userRouter =express.Router()
@@ -7,7 +8,7 @@ const userRouter =express.Router()
 userRouter.get('/', getAllUsers)
 
 // create new User
-userRouter.post('/', createNewUser)
+userRouter.post('/',validateUser ,createNewUser)
 
 
 // login to platform
