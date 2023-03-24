@@ -9,9 +9,6 @@ import checkAuth from './middleware/checkAuth.js'
 import logger from 'morgan'
 import checkoutRouter from './routes/checkoutRouter.js'
 
-
-
-
 dotenv.config()
 const server = express()
 connect()
@@ -22,9 +19,8 @@ server.use(logger('dev'))
 
 server.use('/products', productRouter)
 server.use('/users', userRouter)
-server.use('/cart', checkAuth,cartRouter)
+server.use('/cart', checkAuth, cartRouter)
 server.use('/checkout', checkAuth, checkoutRouter)
-
 
 server.use('*', (req, res, next) => {
   next({
@@ -35,7 +31,7 @@ server.use('*', (req, res, next) => {
 
 server.use((error, req, res, next) => {
   res.status(error.status || 400).send({
-    message: error.message || "unknown Error"
+    message: error.message || "Unknown Error"
   })
 })
 

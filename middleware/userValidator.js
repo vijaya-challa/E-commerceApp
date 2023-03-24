@@ -7,9 +7,9 @@ import createError from 'http-errors'
 export const validateUser = [
   body('email')
   .exists()
-  .withMessage('email is required')
+  .withMessage('Email is required')
   .isEmail()
-  .withMessage('Not a valid Email!'),
+  .withMessage('Not a valid email!'),
 
   body('username')
   .exists()
@@ -40,7 +40,5 @@ export const validateUser = [
         error: errors.array()
       })
     }
-
   }
-
 ]
