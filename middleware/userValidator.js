@@ -30,6 +30,7 @@ export const validateUser = [
     max: 16
   })
   .withMessage('Password must be in range of [8, 16] characters'),
+
   (req, res, next) => {
     const errors = validationResult(req)
     if (errors.isEmpty()) {
