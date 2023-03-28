@@ -13,7 +13,6 @@ dotenv.config()
 const server = express()
 connect()
 const port = process.env.PORT || 3000
-
 server.use(express.json())
 server.use(logger('dev'))
 
